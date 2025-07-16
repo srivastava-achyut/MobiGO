@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome - Logged In</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .message {
+      text-align: center;
+      font-size: 1.2rem;
+      margin: 20px;
+      color: green;
+    }
+
+    /* Just to override if needed */
+    .card .add-to-cart {
+      background-color: #28a745;
+    }
+
+    .card .add-to-cart:hover {
+      background-color: #1e7e34;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo">E-Kart</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Products</a>
+      
+      <a href="#">About</a>
+       <a href="#">Contact</a>
+      
+      
+      <a href="index.html">Logout</a>
+    </nav>
+  </header>
+
+  <div class="message">
+    ✅ Welcome back, Achyut! You are now logged in.
+  </div>
+
+  <h2 class="heading">Top Smartphones</h2>
+  <div class="card-grid">
+    <!-- Example Card -->
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/81fxjeu8fdL._SX679_.jpg" alt="Redmi Note 13 Pro+" class="product-img" />
+      <div class="card-body">
+        <h2 class="product-title">Redmi Note 13 Pro+</h2>
+        <p class="price">₹29,999</p>
+        <div class="stars">⭐⭐⭐⭐☆ (4.2)</div>
+        <button class="add-to-cart" onclick="alert('Item added to cart!')">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Add more cards as needed with working buttons -->
+  </div>
+
+</body>
+</html>
