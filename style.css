@@ -61,6 +61,7 @@ body {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
+   width: 300px;
 }
 
 .card:hover {
@@ -70,12 +71,16 @@ body {
 .product-img {
   width: 100%;
   height: 220px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .card-body {
   padding: 16px;
   text-align: center;
+  align-items: center;
+   display: flex; 
+  flex-direction: column;
+  
 }
 
 .product-title {
@@ -95,9 +100,10 @@ body {
 }
 
 .add-to-cart {
+  margin-top: auto;
   background-color: #0073e6;
   color: white;
-  padding: 10px 16px;
+  padding: 10px 20px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -142,4 +148,11 @@ body.dark header {
 body.dark footer {
   background-color: #1e1e1e;
   color: white;
+}
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  text-align: center;
+  width: 100%;
 }
